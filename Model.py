@@ -47,3 +47,15 @@ prompt = generate_birthday_card(user_ngs)
 # Checking
 print(prompt)
 print(Text)
+
+# EVENT MANAGEMENT
+Event = int(input("Enter 1 to wish HAPPY BIRTHDAY or 2 to wish HAPPPY WORK ANNIVERSARY: "))
+if Event == 1:
+  Event = "Happy Birthday"
+elif Event == 2:
+  Event = "Happy Work Anniversary"
+else:
+  Event = "Wrong Input"
+  
+# Checking
+print(Event)
