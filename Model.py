@@ -35,15 +35,15 @@ def generate_birthday_card(ngs):
 
     return greeting_card
 
-# Get NGS from the user
+# User-Input Employee ID or NGS
 user_ngs = int(input("Enter the NGS of the employee: "))
 
-# Store the name of the user-entered NGS in a variable named 'Text'
+# Storing the Name of the Employee
 Text = df[df['NGS'] == user_ngs]['NAME'].values[0]
 
 # Generate birthday greeting card and store it in the 'prompt' variable
 prompt = generate_birthday_card(user_ngs)
 
-# Print the generated string or error message
+# Checking
 print(prompt)
 print(Text)
